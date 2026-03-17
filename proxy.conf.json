@@ -1,0 +1,30 @@
+{
+  "/graphql": {
+    "target": "http://localhost:9280",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug",
+    "cookieDomainRewrite": "localhost"
+  },
+  "/login": {
+    "target": "http://localhost:9280",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug",
+    "cookieDomainRewrite": "localhost"
+  },
+  "/oauth2": {
+    "target": "http://localhost:9280",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug",
+    "cookieDomainRewrite": "localhost"
+  },
+  "/actuator": {
+    "target": "http://localhost:9280",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug",
+    "cookieDomainRewrite": "localhost"
+  }
+}
