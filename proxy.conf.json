@@ -26,5 +26,12 @@
     "changeOrigin": false,
     "logLevel": "debug",
     "cookieDomainRewrite": "localhost"
+  },
+  "/logout": {
+    "target": "http://localhost:9280",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug",
+    "cookieDomainRewrite": "localhost"
   }
 }

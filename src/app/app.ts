@@ -7,10 +7,12 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   template: `
     <h1>ImmoBanking</h1>
     <nav>
+      <a routerLink="/register" routerLinkActive="active">Register</a> |
       <a routerLink="/customers" routerLinkActive="active">Customers</a> |
       <a routerLink="/properties" routerLinkActive="active">Properties</a> |
       <a routerLink="/property-insights" routerLinkActive="active">Property Insights</a> |
       <a routerLink="/activity-history" routerLinkActive="active">Activity History</a>
+      <button (click)="logout()" style="float: right;">Logout</button>
     </nav>
     <hr>
     <router-outlet />
@@ -21,4 +23,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     h1 { margin-bottom: 4px; }
   `]
 })
-export class App {}
+export class App {
+  logout(): void {
+    window.location.href = '/logout';
+  }
+}

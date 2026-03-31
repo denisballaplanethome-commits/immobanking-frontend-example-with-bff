@@ -66,12 +66,14 @@ export class PropertyInsightsComponent {
       lang: this.lang
     }).subscribe({
       next: res => {
+        console.log('Property page response:', res);
         const result = res.getPropertyPageUrl;
         this.dossierId = result.dossierId;
         this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(result.pageUrl);
         this.message = '';
       },
       error: err => {
+        console.error('Property page error:', err);
         this.message = `Error: ${err.message}`;
         this.iframeUrl = null;
       }
